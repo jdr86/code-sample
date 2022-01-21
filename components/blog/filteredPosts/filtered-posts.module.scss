@@ -1,0 +1,12 @@
+@import "../../../styles/global.scss";
+.notFound {
+  background:$--super-light-grey;
+  h2 {
+    @include h2;
+    color: $--dark;
+  }
+  p {
+    @include pH3;
+    color: $--dark;
+  }
+}

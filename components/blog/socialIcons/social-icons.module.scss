@@ -1,0 +1,38 @@
+.horizontal {
+  width: 290px;
+  max-width: 290px;
+  div {
+    margin-right: 10px;
+  }
+}
+.vertical {
+  width: 100px;
+  max-width: 100px;
+  div {
+    margin-bottom: 10px;
+  }
+}
+.fixed {
+  top: 358px;
+}
+.facebook {
+  color: #333;
+  &:hover {
+    color: #2e4fa5;
+    box-shadow: 0px 2px 7px 0px #00000033;
+  }
+}
+.linkedIn {
+  color: #333;
+  &:hover {
+    color: #0398c7;
+    box-shadow: 0px 2px 7px 0px #00000033;
+  }
+}
+.twitter {
+  color: #333;
+  &:hover {
+    color: #1fb1ef;
+    box-shadow: 0px 2px 7px 0px #00000033;
+  }
+}

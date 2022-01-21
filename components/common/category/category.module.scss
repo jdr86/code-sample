@@ -1,0 +1,21 @@
+@import "../../../styles/global.scss";
+.category {
+  background: $--white;
+  border: 1px solid $--light_gray;
+  border-radius: 100px;
+  color: $--black;
+  @include p;
+  padding: 10px 20px;
+  white-space: nowrap;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (max-width: 1099px) {
+  .category {
+    @include p;
+    padding: 5px 10px;
+    font-weight: $--font-normal;
+  }
+}

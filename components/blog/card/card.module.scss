@@ -1,0 +1,114 @@
+@import "../../../styles/global.scss";
+// transition
+$--transition: 0.1s ease-in;
+.card {
+  padding: 40px;
+  width: 100%;
+  border-radius: $--card-radius;
+  color: $--white;
+  transition: 0.2s ease-in;
+  .overlay {
+    background: $--card-overlay;
+    transition: $--transition;
+  }
+  .overlayDark {
+    background: $--card-hover-overlay;
+    opacity: 0;
+    transition: $--transition;
+  }
+  .content {
+    width: 72%;
+    transition: $--transition;
+    h3 {
+      @include h3;
+      transition: $--transition;
+    }
+    p {
+      @include p;
+    }
+    .more {
+      transition: $--transition;
+      opacity: 0;
+      max-height: 0;
+      margin-top: 0;
+      color: $--white;
+      p {
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: $--font-medium;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: $--card-hover-shadow;
+    .content {
+      width: 80%;
+    }
+    .overlay {
+      opacity: 0;
+    }
+    .overlayDark {
+      opacity: 1;
+    }
+    h3 {
+      @include h2;
+    }
+    .more {
+      opacity: 1;
+      max-height: auto;
+      margin-top: 20px;
+    }
+  }
+}
+.square {
+  height: $--card-normal;
+}
+.square-lg {
+  height: $--card-lg;
+}
+.rectangle {
+  height: $--card-sm;
+}
+.colSpan {
+  grid-area: 1 / 1 / span 2 / span 1;
+  height: 100%;
+}
+@media screen and (max-width: 1099px) {
+  .colSpan{
+    height: 35rem;
+  }
+  .card {
+    padding: 15px;
+    .content {
+      width: 80%;
+      h3 {
+        font-size: $--h3-sm;
+        font-weight:$--font-medium;
+      }
+      p{
+        font-size: $--p-xs;
+      }
+    }
+    &:hover {
+      box-shadow: $--card-hover-shadow;
+      .content {
+        width: 80%;
+      }
+      .overlay {
+        opacity: 1;
+      }
+      .overlayDark {
+        opacity: 0;
+      }
+      h3 {
+        font-size: $--h4;
+        font-weight:$--font-medium;
+      }
+      .more {
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}

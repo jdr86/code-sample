@@ -1,0 +1,64 @@
+@import "../../../styles/global.scss";
+.leftImage {
+  margin-left: 10px;
+}
+.rightImage {
+  margin-right: 10px;
+}
+.button{
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.primaryBordered {
+  color: $--black;
+  border: 1.29px solid $--black;
+}
+.infoBordered {
+  color: $--blue-primary;
+  border: 1.29px solid $--blue-primary;
+}
+.successBordered {
+  color: $--green-primary;
+  border: 1.29px solid $--green-primary;
+}
+.dangerBordered {
+  color: $--red-primary;
+  border: 1.29px solid $--red-primary;
+}
+.primaryFilled {
+  color: $--white;
+  background-color: $--black;
+}
+.infoFilled {
+  color: $--white;
+  background-color: $--blue-primary;
+  &:hover{
+    background-color: $--blue-dark;
+  }
+}
+.successFilled {
+  color: $--white;
+  background-color: $--green-primary;
+}
+.dangerFilled {
+  color: $--white;
+  background-color: $--red-primary;
+}
+.primaryTransparent {
+  color: $--black;
+}
+.infoTransparent {
+  color: $--blue-primary;
+  &:hover{
+    color: $--blue-dark;
+  }
+}
+.successTransparent {
+  color: $--green-primary;
+}
+.dangerTransparent {
+  color: $--red-primary;
+}
+.isLoading{
+opacity: .5;
+}

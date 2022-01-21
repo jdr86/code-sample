@@ -1,0 +1,41 @@
+@import "../../../styles/global.scss";
+.header {
+
+  h1{
+    @include h1;
+  }
+  h2 {
+    @include h2;
+  }
+  .category {
+    font-weight: $--font-normal;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 1em;
+    color: $--dark;
+  }
+  .bar {
+    width: 100px;
+    height: 10px;
+    background: $--yellow;
+  }
+}
+@media screen and (max-width: 1099px){
+  .header {
+  h1{
+    font-size: $--h3 !important;
+    line-height: $--h3 !important;
+    font-weight: $--font-medium;
+
+  }
+  h2 {
+    font-size: $--h3 !important;
+    line-height: $--h3 !important;
+    font-weight: $--font-medium;
+
+  }
+  .category { 
+    font-size: 10px !important;
+    line-height: 10px !important; 
+  }
+}}
